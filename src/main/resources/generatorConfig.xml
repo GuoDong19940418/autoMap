@@ -6,10 +6,13 @@
     <!-- !!!! Driver Class Path !!!! -->
     <classPathEntry location="/opt/maven/repository/mysql/mysql-connector-java/5.1.40/mysql-connector-java-5.1.40.jar"/>
 
-    <!-- 配置pojo的序列化 -->
-    <plugin type="org.mybatis.generator.plugins.SerializablePlugin" />
+
 
     <context id="context" targetRuntime="MyBatis3">
+
+        <!-- 配置pojo的序列化 -->
+        <plugin type="org.mybatis.generator.plugins.SerializablePlugin" />
+
         <!-- 是否去除注释-->
         <commentGenerator>
             <property name="suppressAllComments" value="true"/>
@@ -49,17 +52,8 @@
         <!-- !!!! Table Configurations !!!! -->
         <!-- 指定数据库表 -->
         <!--<table schema="" tableName="tb_content"/>-->
-        <table schema="" tableName="CNTD_attack"/>
-        <table schema="" tableName="CNTD_attack_address"/>
-        <table schema="" tableName="CNTD_control_address"/>
-        <table schema="" tableName="CNTD_control_address2"/>
-        <table schema="" tableName="CNTD_other_malicious_address"/>
-        <table schema="" tableName="CNTD_puthorses_address"/>
-        <table schema="" tableName="CNTD_today_malicious"/>
-        <table schema="" tableName="CNVD_Vulnerability"/>
-        <table schema="" tableName="CNVD_Patch"/>
-        <table schema="" tableName="phishTank"/>
-        <table schema="" tableName="tor_nodes"/>
+        <table schema="" tableName="sub_attack"/>
+
 
     </context>
 </generatorConfiguration>
