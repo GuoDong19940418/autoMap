@@ -5,6 +5,10 @@
 <generatorConfiguration>
     <!-- !!!! Driver Class Path !!!! -->
     <classPathEntry location="/opt/maven/repository/mysql/mysql-connector-java/5.1.40/mysql-connector-java-5.1.40.jar"/>
+
+    <!-- 配置pojo的序列化 -->
+    <plugin type="org.mybatis.generator.plugins.SerializablePlugin" />
+
     <context id="context" targetRuntime="MyBatis3">
         <!-- 是否去除注释-->
         <commentGenerator>
