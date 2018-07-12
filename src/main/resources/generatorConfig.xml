@@ -30,7 +30,8 @@
         </javaTypeResolver>
 
         <!-- !!!! Model Configurations !!!! -->
-        <javaModelGenerator targetPackage="cn.org.cntd.web.entity" targetProject="src/main/java">
+        <javaModelGenerator targetPackage="cn.org.cntd.cntdadmin.entity" targetProject="src/main/java">
+        <!--<javaModelGenerator targetPackage="cn.org.cntd.web.entity" targetProject="src/main/java">-->
         <!--<javaModelGenerator targetPackage="cn.org.cntd.cntduser.entity" targetProject="src/main/java">-->
             <!-- enableSubPackages:是否让schema作为包的后缀 -->
             <property name="enableSubPackages" value="false"/>
@@ -44,7 +45,8 @@
         </sqlMapGenerator>
 
         <!-- !!!! Mapper Interface Configurations !!!! -->
-        <javaClientGenerator targetPackage="cn.org.cntd.web.mapper" targetProject="src/main/java" type="XMLMAPPER">
+        <javaClientGenerator targetPackage="cn.org.cntd.cntdadmin.mapper" targetProject="src/main/java" type="XMLMAPPER">
+        <!--<javaClientGenerator targetPackage="cn.org.cntd.web.mapper" targetProject="src/main/java" type="XMLMAPPER">-->
         <!--<javaClientGenerator targetPackage="cn.org.cntd.cntduser.mapper" targetProject="src/main/java" type="XMLMAPPER">-->
             <property name="enableSubPackages" value="false"/>
         </javaClientGenerator>
@@ -64,7 +66,10 @@
         <!--<table schema="" tableName="CNTD_vulnerability"/>-->
         <!--<table schema="" tableName="simple_dictionary"/>-->
 
-        <table schema="" tableName="code_rating"/>
+        <table schema="" tableName="news"/>
+        <table schema="" tableName="simple_dictionary"/>
+
+        <!--<table schema="" tableName="code_rating"/>-->
 
         <!--<table schema="" tableName="cntd_user"/>-->
         <!--<table schema="" tableName="cntd_role"/>-->
